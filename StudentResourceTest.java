@@ -61,10 +61,10 @@ public class StudentResourceTest {
 	    ss = Mockito.spy(StudentService.class);
 	    
 	    List<Student> expected = new ArrayList<Student>(Arrays.asList(
-	            new Student(1L, "ahmed", 2005, "CSC"),
-	            new Student(2L, "hassan", 2006, "MCM"),
-	            new Student(4L, "ali", 2005, "MCM"),
-	            new Student(5L, "hatem", 2006, "CSC")));
+	            new Student(1L, "hassan", 2006, "CS"),
+	            new Student(2L, "AHMED", 2002, "BUS"),
+	            new Student(4L, "Youmna", 2005, "ENG"),
+	            new Student(5L, "Hatem", 2001, "MCM")));
 	    
 	    ss.deleteStudent(3);
 	    
@@ -75,3 +75,4 @@ public class StudentResourceTest {
 	}
 
 }
+
